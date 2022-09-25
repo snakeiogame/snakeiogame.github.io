@@ -1,0 +1,2 @@
+var refreshCanvas=function(){var isTouch=('ontouchstart'in document.documentElement);if(!isTouch){return;}
+var newWidth=$(window).innerWidth();var newHeight=$(window).innerHeight();$("#gameContainer").width(newWidth);$("#gameContainer").height(newHeight);};$(function(){refreshCanvas();});$(window).resize(function(){refreshCanvas();});
